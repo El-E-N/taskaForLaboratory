@@ -1,0 +1,120 @@
+{
+  "form": {
+    "name": "Название формы",
+    "postmessage": "Сообщение в случае успешного заполнения формы",
+    "items": [{
+      "type": "filler",
+      "attributes": {
+        "message": "Произвольные текст"
+      }
+    }, {
+      "type": "text",
+      "attributes": {
+        "name": "name для text",
+        "placeholder": "Текст для placeholder",
+        "required": true,
+        "value": "",
+        "label": "Label для элемента",
+        "class": "css-class",
+        "validationRules": [{
+          "type": "email"
+        }],
+        "disabled": false
+      }
+    }, {
+      "type": "textarea",
+      "attributes": {
+        "name": "name для textarea",
+        "placeholder": "Текст для placeholder",
+        "required": true,
+        "value": "",
+        "label": "Label для элемента",
+        "class": "css-class",
+        "validationRules": [{
+          "type": "email"
+        }],
+        "disabled": true
+      }
+    }, {
+      "type": "checkbox",
+      "attributes": {
+        "name": "name для textbox",
+        "placeholder": "Текст для placeholder",
+        "required": true,
+        "checked": true,
+        "label": "Label для элемента",
+        "class": "css-class",
+        "disabled": true
+      }
+    }, {
+      "type": "button",
+      "attributes": {
+        "class": "css-class",
+	"text": "какой-то текст на кнопке"
+      }
+    }, {
+      "type": "select",
+      "attributes": {
+        "name": "name для select",
+        "placeholder": "Текст для placeholder",
+        "required": true,
+        "value": "",
+        "label": "Label для элемента",
+        "class": "css-class",
+        "validationRules": [{
+          "type": "email"
+        }],
+        "disabled": true,
+	"options": [{
+		"value": "один",
+		"text": "первый",
+		"selected": false
+	},  {
+		"value": "два",
+		"text": "второй",
+		"selected": true
+	},  {
+		"value": "три",
+		"text": "третий",
+		"selected": false
+	}]
+      }
+    }, {
+      "type": "radio",
+      "attributes": {
+        "name": "name для radio",
+        "placeholder": "Текст для placeholder",
+        "required": true,
+        "label": "Label для элемента",
+        "class": "css-class",
+        "validationRules": [{
+          "type": "email"
+        }],
+        "disabled": true,
+	"items": [{
+		"value": "один",
+		"label": "первый",
+		"checked": true
+	}]
+      }
+    }, {
+      "type": "radio",
+      "attributes": {
+        "name": "name для radio",
+        "placeholder": "Текст для placeholder",
+        "required": true,
+        "label": "Label для элемента",
+        "class": "css-class",
+        "validationRules": [{
+          "type": "email"
+        }],
+        "disabled": true,
+	"items": [{
+		"value": "два",
+		"label": "второй",
+		"checked": false
+	}]
+       }
+    }]
+  }
+}
